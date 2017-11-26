@@ -1,0 +1,392 @@
+/*****Base CSS ******/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300,300italic);
+
+.header_area{
+    background: #02918c;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #7e8287;
+}
+
+li{
+    list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+    
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.floatleft{
+    float: left;
+}
+
+.floatright{
+    float: right;
+}
+
+.fix:before, .fix:after{
+    content: "";
+    display: table;
+}
+
+.fix:after{
+    clear: both;
+}
+
+.single_works:hover .img_hover,.img_hover{
+    transition: 0.5s;
+}
+
+/***** header Area CSS *****/
+
+
+.logo {
+    padding-top: 7px;
+}
+
+.logo a{
+    color: #fff;
+    font-size: 38px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.logo span{
+    color: #cfc91d;
+}
+
+.menu ul{
+    margin-bottom: 0;
+}
+
+.menu ul li {
+  display: inline-block;
+  list-style:none;
+  padding: 25px 0 25px 46px;
+}
+.menu ul li a{
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    color: #fff;
+}
+
+/****** Welcome Area CSS *****/
+
+.welcome_area{
+    background: url(img/banner.jpg) no-repeat scroll center center /cover;
+    min-height: 725px;
+    text-align: center;
+    position: relative;
+}
+
+
+
+.welcome_area:before{
+    content: "";
+    background-color: #000;
+    opacity: .6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+
+.welcome-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.welcome-table{
+    display: table;
+    width: 100%;
+    height: 725px;
+}
+
+.welcome_text{
+    color: #fff;
+    position: relative;
+    z-index: 99;
+    
+}
+
+.welcome_text h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+.welcome_text h1 {
+  font-size: 68px;
+  font-weight: 400;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+}
+.welcome_text h4{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.welcome_text a{
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: #cfc91d;
+    display: inline-block;
+    color: #0b1016;
+    padding: 15px 20px;
+    margin-top: 129px;
+    position: relative;
+}
+
+.welcome_text .know_more::before {
+  color: #fff;
+  content: "}";
+  font-size: 140px;
+  font-weight: 100;
+  left: 56px;
+  position: absolute;
+  top: -181px;
+  transform: rotate(90deg);
+}
+
+/***** About Area CSS  ****/
+
+.about_area{
+    overflow: hidden;
+}
+.section_title{
+    text-align: center;
+    padding: 90px 155px 70px;
+    position: relative;
+    color: #7e8287;
+}
+
+.section_title::before {
+  content: "~~~~~~~~ :: ~~~~~~~~";
+  left: 0;
+  padding: 80px;
+  position: absolute;
+  right: 0;
+}
+.section_title h1{
+    color: #02918c;
+    font-size: 46px;
+    font-weight: 800;
+    padding-bottom: 75px;
+}
+
+.section_title p{
+    color: #7e8287;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 300;
+    
+}
+
+.section_title p span{
+    font-weight: 800;
+    font-size: 23px;
+}
+
+
+
+.section_service .single_service {
+  border-right: 1px solid #d9dbdb;
+  float: left;
+  margin-bottom: 100px;
+  padding: 30px 40px;
+  text-align: center;
+  width: 300px;
+}
+.single_service img{
+    margin-bottom: 20px;
+}
+
+.section_service .single_service h3{
+    color: #7e8287;
+    font-size: 16px;
+    font-weight: 800;
+    padding-bottom: 18px;
+}
+
+.single_service p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #7e8287;
+}
+
+.section_service div:last-child{
+    border: 0;
+}
+
+/****** Service Section *****/
+.service_section{
+    background: #f0f0e8;
+}
+
+
+.service_section{
+    position: relative;
+}
+.services{
+    width: 50%;
+    padding-bottom: 30px;
+    padding-left: 20px;
+}
+
+.service_section:after{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: url(img/Typing.jpg) scroll 0 0 / cover;
+    content: "";
+    opacity: .34;
+}
+
+.services .section_title{
+    text-align: left;
+    padding-left: 0;
+}
+
+.services .section_title::before{
+    padding-left: 0;
+}
+
+
+
+.service_section .single_service {
+    float: left;
+    padding-right: 50px;
+    padding-bottom: 30px;
+    width: 50%;
+}
+
+.service_section .single_service h3{
+    padding-bottom: 10px;
+}
+
+.service_section .single_service .fx {
+    margin-top: -195px;
+}
+
+/***** Work Section CSS ******/
+
+.single_works{
+    width: 25%;
+    float: left;
+    position: relative;
+}
+
+.single_works img{
+    width: 100%;
+    height: 100%;
+}
+
+.single_works:hover .img_hover{
+    opacity: 0.85;
+}
+
+.img_hover {
+  background: #128380 none repeat scroll 0 0;
+  color: #fff;
+  height: 80%;
+  left: 30px;
+  opacity: 0;
+  padding: 35px;
+  position: absolute;
+  text-align: center;
+  top: 30px;
+  width: 80%;
+}
+
+.img_text > h3 {
+    padding: 15px;
+}
+
+/***** Contact Area CSS ***/
+
+
+
+.contactme_form{
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.contactme_form:before{
+    position: absolute;
+    background: #0b0b0b;
+    height: 100%;
+    width: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+.contact_form{
+    text-align: center;
+    
+}
+
+.contact_form input[type=text],
+.contact_form input[type=email],
+.contact_form textarea,.contact_form input[type=submit]{
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-bottom: 1px solid #898989;
+    display: block;
+    padding: 20px 250px;
+    margin: 0 auto;
+    background: #0b0b0b;
+    color: #fff;
+}
+
+.contact_form textarea{
+    padding: 10px 350px;
+    resize: none;
+}
+
+.contact_form input[type=submit]{
+    
+    background: #cfc91d;
+    margin-top: 40px;
+    padding: 10px 50px;
+    border: none;
+    font-size: 14px;
+    font-weight: 800;
+    color: #0b1016;
+}
+
+/******* Footer Area CSS *****/
+
+.footer_area{
+    background: #0b0b0b;
+}
+
+.footer_area p{
+    text-align: center;
+    color: #7e8287;
+    font-size: 14px;
+    padding: 30px 0;
+}
